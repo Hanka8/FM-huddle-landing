@@ -1,0 +1,127 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body.wtf {
+  background-color: var(--violet);
+  background-image: url(images/bg-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin: 5% auto 5% 5%;
+}
+
+main {
+  color: white;
+}
+
+h1.header {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 4%;
+
+}
+
+div.container {
+  padding-right: 0;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.8;
+}
+
+.illustration {
+  width: 103%;
+}
+
+div.col-text {
+  width: 35%;
+  padding-top: 4%;
+  margin-left: 5%;
+}
+
+.btn.my-btn {
+	background-color:white;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color: var(--violet);
+	font-family:Arial;
+	padding:16px 65px;
+	text-decoration:none;
+  filter: drop-shadow(0 0 15px hsl(0, 0%, 15%));
+}
+.btn.my-btn:hover {
+	background-color: var(--magenta);
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+i {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 16px 18px;
+  color: white;
+  margin: 0.5%;
+}
+
+i.fa-facebook-f {
+  padding: 16px 20px;
+}
+
+i:hover {
+  color: var(--magenta);
+  border: 1px solid var(--magenta);
+  cursor: pointer;
+}
+
+/* RESPONSIBILITY */
+
+@media (max-width: 400px) {
+  .logo {
+    width: 40%;
+    margin: 5% auto 10% 3%;
+  }
+  div.col-lg-7.col-sm-12 {
+    width: 80%;
+    margin: auto 5%;
+  }
+  div.col-lg-5.col-sm-12.col-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    justify-content: center;
+    margin-top: 15%;
+  }
+  i {
+    margin: 2%;
+  }
+  .btn.my-btn {
+    padding: 10px 65px;
+  }
+  h1.header {
+    font-size: 25px;
+    margin-top: 10%;
+  }
+}
